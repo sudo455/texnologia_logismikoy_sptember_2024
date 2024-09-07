@@ -1,94 +1,71 @@
-# Data Mining and Analysis Project Structure
+# TODO List for Data Mining and Analysis Project
 
-## 1. Application Components
+## Completed Tasks
 
-- ### Data Loading
+- [x] Create basic Streamlit app structure
+- [x] Implement data loading functionality (CSV, Excel, TSV)
+- [x] Implement PCA and UMAP visualizations
+- [x] Add exploratory data analysis charts
+- [x] Implement feature selection algorithm
+- [x] Implement classification algorithms (KNN and SVM)
+- [x] Add performance comparison for classification algorithms
+- [x] Create basic "About" page
 
-  - CSV support [ ]
-  - Excel (XLS/XLSX) support [ ]
-  - TSV support [ ]
+## Remaining Tasks
 
-- ### Data Visualization
+### Application Development
 
-  - 3D visualizations
-    - PCA (Principal Component Analysis) [ ]
-    - UMAP (Uniform Manifold Approximation and Projection) [ ]
-  - Exploratory Data Analysis (EDA) [ ]
-    - Feature correlation heatmap [ ]
-    - Feature distribution plots [ ]
+- [ ] Refine UI/UX design
+- [ ] Add error handling and input validation
+- [ ] Implement data preprocessing options (e.g., handling missing values, normalization)
+- [ ] Add more exploratory data analysis options
+- [ ] Implement cross-validation for more robust performance evaluation
+- [ ] Add option to save/export results and visualizations
 
-- ### Machine Learning
+### Docker
 
-  - Feature Selection [ ]
-    - SelectKBest algorithm [ ]
-  - Classification [ ]
-    - K-Nearest Neighbors (KNN) [ ]
-    - Support Vector Machine (SVM) [ ]
-  - Model Evaluation [ ]
-    - Accuracy [ ]
-    - F1-Score [ ]
-    - ROC-AUC Score [ ]
+- [ ] Create Dockerfile for the application
+- [ ] Test Docker container locally
+- [ ] Document Docker usage instructions
 
-## 2. User Interface
+### GitHub
 
-- Streamlit-based web application [ ]
-- Interactive components [ ]
-  - File uploader [ ]
-  - Feature selectors [ ]
-  - Parameter sliders [ ]
+- [ ] Set up GitHub repository
+- [ ] Add README.md with project description and setup instructions
+- [ ] Implement branching strategy (e.g., feature branches, development branch)
+- [ ] Set up GitHub Actions for continuous integration
 
-## 3. Code Structure
+### Documentation
 
-- `app.py`: Main application file [ ]
-- Helper functions:
-  - `load_data()` [ ]
-  - `perform_pca()` [ ]
-  - `perform_umap()` [ ]
-  - `plot_3d()` [ ]
-  - `perform_feature_selection()` [ ]
-  - `train_and_evaluate()` [ ]
+- [ ] Create detailed UML diagram of application architecture and user interface
+- [ ] Write LaTeX report using Overleaf, including:
+  - [ ] Detailed design of the application
+  - [ ] Implementation details
+  - [ ] Analysis results and conclusions
+  - [ ] Description of each team member's contribution
+- [ ] Describe software release life cycle model (e.g., Agile)
 
-## 4. Dependencies
+### Testing
 
-- Streamlit [ ]
-- Pandas [ ]
-- NumPy [ ]
-- Scikit-learn [ ]
-- UMAP-learn [ ]
-- Plotly [ ]
+- [ ] Develop unit tests for core functions
+- [ ] Implement integration tests
+- [ ] Perform user acceptance testing
 
-## 5. Data Requirements
+### Performance Optimization
 
-- Tabular data (CSV, Excel, TSV) [ ]
-- Features in columns [ ]
-- Label in the last column [ ]
+- [ ] Profile application performance
+- [ ] Optimize slow operations
+- [ ] Implement caching where appropriate
 
-## 6. Future Enhancements
+### Final Steps
 
-- Additional EDA charts [ ]
-- More ML algorithms [ ]
-- Hyperparameter tuning [ ]
-- Cross-validation [ ]
+- [ ] Conduct code review
+- [ ] Refactor code based on review feedback
+- [ ] Update documentation with final changes
+- [ ] Prepare presentation materials
 
-## 7. Documentation
+## Notes
 
-- About section in the application [ ]
-- GitHub repository (to be created) [ ]
-- User guide (to be created) [ ]
-
-## 8. Deployment
-
-- Docker support (to be implemented) [ ]
-- Cloud hosting (to be determined) [ ]
-
-## 9. Development Process
-
-- Version control with Git
-- Collaborative development on GitHub [ ]
-- Agile methodology (to be detailed) [ ]
-
-## 10. Reporting
-
-- LaTeX report (to be created) &check;
-- UML diagram (to be designed) [ &cross;]
-- Software Release Life Cycle description (to be written) [ ]
+- Remember to update this TODO list as you progress through the project
+- Regularly commit changes to GitHub and update the LaTeX report
+- Communicate with team members about task assignments and progress
