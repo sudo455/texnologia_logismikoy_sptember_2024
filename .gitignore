@@ -1,0 +1,5 @@
+*.pdf
+.vscode/
+venv
+tabular_data_generator/
+lib/__pycache__
