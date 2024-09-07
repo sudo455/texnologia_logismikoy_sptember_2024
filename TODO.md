@@ -89,6 +89,15 @@
 
 ## 10. Reporting
 
-- LaTeX report (to be created) [ ]
-- UML diagram (to be designed) [ ]
+- LaTeX report (to be created) &check;
+- UML diagram (to be designed) [ &cross;]
 - Software Release Life Cycle description (to be written) [ ]
+
+
+| Selection |        |
+| --------- | ------ |
+| <li>- [ ] </li> |  |
+
+| Selection |        |
+| --------- | ------ |
+| <li>- [x] </li> |  |
