@@ -91,7 +91,7 @@ To build and run the Docker image locally:
 To run the application using the pre-built Docker image from Docker Hub:
 
 ```bash
-sudo docker run -d -p 8501:8501 --name texnologia_logismikoy UserName/texnologia_logismikoy:latest
+sudo docker run -d -p 8501:8501 --name texnologia_logismikoy drefficient/texnologia_logismikoy:latest
 ```
 
 Then open your browser and navigate to `http://localhost:8501`

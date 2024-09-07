@@ -83,7 +83,7 @@ This directory contains the source code for the Data Mining and Analysis Applica
 The application is also available as a pre-built Docker image on Docker Hub. To use it:
 
 ```bash
-sudo docker run -d -p 8501:8501 --name texnologia_logismikoy UserName/texnologia_logismikoy:latest
+sudo docker run -d -p 8501:8501 --name texnologia_logismikoy drefficient/texnologia_logismikoy:latest
 ```
 
 Then open your browser and navigate to `http://localhost:8501`
