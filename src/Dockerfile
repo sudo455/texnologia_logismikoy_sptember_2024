@@ -1,5 +1,5 @@
 # official python image
-FROM python:3.12.5-alpine
+FROM python:3.12-alpine
 
 # Set the working directory in the container
 WORKDIR /app
@@ -7,7 +7,8 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 COPY . /app
 
-RUN apk upgrade
+# update and upgrade the packages and install build-base for sikit_learn
+RUN apk update && apk upgrade && apk add build-base
 # Install the required packages
 RUN pip install --no-cache-dir -r requirements.txt
 
