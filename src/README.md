@@ -1,46 +1,45 @@
-# Data Mining and Analysis Application - Source Code
+# Data Mining and Analysis Application
 
-This directory contains the source code for the Data Mining and Analysis Application.
+This repository contains a web-based application for data mining and analysis using Streamlit. The application integrates tabular data and supports various functions including data loading, visualization, feature selection, and classification.
 
-## Directory Structure
+## Features
+
+- Load tabular data (CSV, Excel, TSV)
+- 3D visualizations using PCA and UMAP
+- Exploratory Data Analysis (EDA) charts
+- Feature selection
+- Machine Learning classification (KNN and SVM)
+- Performance comparison before and after feature selection
+
+## Repository Structure
 
 ```
 .
-├── lib/
-│   ├── functions/
-│   │   ├── load_data.py
-│   │   ├── plot_3d_scatter.py
-│   │   ├── run_classification.py
-│   │   ├── run_feature_selection.py
-│   │   ├── run_pca.py
-│   │   └── run_umap.py
-│   └── pages/
-│       ├── home.py
-│       ├── data_loading.py
-│       ├── visualization.py
-│       ├── feature_selection.py
-│       ├── classification.py
-│       └── about.py
-├── .dockerignore
-├── Dockerfile
-├── main.py
-├── requirements.txt
+├── src/
+│   ├── lib/
+│   │   ├── functions/
+│   │   └── pages/
+│   ├── Dockerfile
+│   ├── main.py
+│   └── README.md
 └── README.md
 ```
 
-## Files and Directories
+## Installation and Usage
 
-- `lib/functions/`: Contains modular functions for core functionalities.
-- `lib/pages/`: Contains individual Streamlit pages for the application.
-- `Dockerfile`: Used to build the Docker image for the application.
-- `main.py`: The main entry point for the Streamlit application.
-- `requirements.txt`: Lists all Python dependencies for the project.
+There are three ways to run this application:
 
-## Running the Application
+### 1. Bare Metal
 
-### Bare Metal
+To run the application directly on your machine:
 
-1. Ensure you're in the `src` directory.
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/sudo455/texnologia_logismikoy_sptember_2024.git
+   cd YourRepositoryName/src
+   ```
+
 2. Create and activate a virtual environment:
 
    ```bash
@@ -62,25 +61,34 @@ This directory contains the source code for the Data Mining and Analysis Applica
 
 5. Open your browser and navigate to `http://localhost:8501`
 
-### Docker
+### 2. Docker Build
 
-1. Build the Docker image:
+To build and run the Docker image locally:
+
+1. Clone the repository and navigate to the src directory:
+
+   ```bash
+   git clone https://github.com/sudo455/texnologia_logismikoy_sptember_2024.git
+   cd YourRepositoryName/src
+   ```
+
+2. Build the Docker image:
 
    ```bash
    sudo docker build -t texnologia_logismikoy:latest .
    ```
 
-2. Run the Docker container:
+3. Run the Docker container:
 
    ```bash
-   sudo docker run -d -p 8501:8501 --name texnologia_logismikoy texnologia_logismikoy:latest
+    sudo docker run -d -p 8501:80 --name texnologia_logismikoy ghcr.io/sudo455/tenologia_logismikoy:latest
    ```
 
-3. Open your browser and navigate to `http://localhost:8501`
+4. Open your browser and navigate to `http://localhost:8501`
 
-## Docker Hub
+### 3. Docker Hub
 
-The application is also available as a pre-built Docker image on Docker Hub. To use it:
+To run the application using the pre-built Docker image from Docker Hub:
 
 ```bash
 sudo docker run -d -p 8501:8501 --name texnologia_logismikoy drefficient/texnologia_logismikoy:latest
