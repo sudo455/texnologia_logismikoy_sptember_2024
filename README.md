@@ -36,7 +36,7 @@ To run the application directly on your machine:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/YourUsername/YourRepositoryName.git
+   git clone https://github.com/sudo455/texnologia_logismikoy_sptember_2024.git
    cd YourRepositoryName/src
    ```
 
@@ -68,7 +68,7 @@ To build and run the Docker image locally:
 1. Clone the repository and navigate to the src directory:
 
    ```bash
-   git clone https://github.com/YourUsername/YourRepositoryName.git
+   git clone https://github.com/sudo455/texnologia_logismikoy_sptember_2024.git
    cd YourRepositoryName/src
    ```
 
@@ -81,7 +81,7 @@ To build and run the Docker image locally:
 3. Run the Docker container:
 
    ```bash
-    sudo docker run -d -p 8501:8501 --name texnologia_logismikoy texnologia_logismikoy:latest
+    sudo docker run -d -p 8501:80 --name texnologia_logismikoy ghcr.io/sudo455/tenologia_logismikoy:latest
    ```
 
 4. Open your browser and navigate to `http://localhost:8501`
