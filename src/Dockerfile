@@ -12,7 +12,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 build-essential \
 curl \
 software-properties-common \
-llvm\
+llvm \
 && rm -rf /var/lib/apt/lists/*
 # Install the required packages
 RUN pip3 install --no-cache-dir -r requirements.txt
