@@ -1,7 +1,9 @@
-streamlit==1.38.0
-pandas==2.2.2
-numpy==2.1.1
-umap-learn==0.5.3
-plotly==5.9.0
-scikit-learn==1.5.1
-# this versions are last modified in 9-9-24
+streamlit
+pandas
+numpy
+umap-learn
+plotly
+numba
+pyarrow
+scikit-learn
+# last modified in 11-9-24

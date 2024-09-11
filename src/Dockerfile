@@ -1,5 +1,5 @@
 # official python image
-FROM python:3.12-alpine
+FROM python:3.12.5-slim
 
 # Set the working directory in the container
 WORKDIR /app
@@ -8,9 +8,14 @@ WORKDIR /app
 COPY . /app
 
 # update and upgrade the packages and install build-base for sikit_learn
-RUN apk update && apk upgrade && apk add build-base
+RUN apt-get update && apt-get upgrade -y && apt-get install -y \
+build-essential \
+curl \
+software-properties-common \
+llvm\
+&& rm -rf /var/lib/apt/lists/*
 # Install the required packages
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Make port 8501 available to the world outside this container
 EXPOSE 80
