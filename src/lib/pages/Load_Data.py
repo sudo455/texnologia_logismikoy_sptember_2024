@@ -8,10 +8,21 @@ except ImportError:
 # Only cache the data loading part
 @cache_data
 def load_data_cached(file):
-    # Process the file and return the data (reading CSV/Excel/TSV)
+    """
+    Caches the process of loading a file and returns the data.
+
+    Parameters:
+        file (str): The uploaded file
+
+    Returns:
+        A pandas DataFrame containing the loaded data
+    """
     return load_data(file)
 
 def load_data_page():
+    """
+    Renders the Load Data page, allowing users to upload files for processing.
+    """
     header("Data Loading")
     
     # This widget should not be inside a cached function

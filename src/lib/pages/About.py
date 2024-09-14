@@ -4,6 +4,13 @@ except ImportError:
     print("Error in About page make sure the librarie streamlit is installed.")
     exit()
 def About_page():
+    """
+    Renders the About page.
+
+    This page provides information about the application, its development team,
+    and how it works.
+    """
+
     header("About")
     write("This application was developed as part of a data mining and analysis project.")
     write("Team members and their contributions:")

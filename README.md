@@ -37,7 +37,7 @@ To run the application directly on your machine:
 
    ```bash
    git clone https://github.com/sudo455/texnologia_logismikoy_sptember_2024.git
-   cd YourRepositoryName/src
+   cd texnologia_logismikoy_sptember_2024/src
    ```
 
 2. Create and activate a virtual environment:
@@ -69,7 +69,7 @@ To build and run the Docker image locally:
 
    ```bash
    git clone https://github.com/sudo455/texnologia_logismikoy_sptember_2024.git
-   cd YourRepositoryName/src
+   cd texnologia_logismikoy_sptember_2024/src
    ```
 
 2. Build the Docker image:
@@ -94,9 +94,10 @@ To run the application using the pre-built Docker image from Docker Hub:
 sudo docker run -d -p 8501:8501 --name texnologia_logismikoy drefficient/texnologia_logismikoy:latest
 ```
 
-To run the application using the pre-built github image from github:
+To run the application using the pre-built Docker image image from github container hub:
 
 ```bash
 sudo docker run -d -p 8501:80 --name texnologia_logismikoy ghcr.io/sudo455/texnologia_logismikoy:latest
+```
 
 Then open your browser and navigate to `http://localhost:8501`

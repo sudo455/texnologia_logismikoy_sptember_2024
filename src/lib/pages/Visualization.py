@@ -8,9 +8,19 @@ except ImportError:
     print("Error in Data Visualization page make sure all the libraries (streamlit, lib.functions.run_pca, lib.functions.plot_3d_scatter, lib.functions.plot_eda, lib.functions.run_umap) is installed and in the correct place.")
     exit()
 def visualization_page():
+    """
+    Renders the Data Visualization page.
+
+    This page displays various visualizations of the loaded data.
+    """
+
     header("Data Visualization")
+
+    # Check if data has been loaded
     if 'data' in session_state:
         data = session_state['data']
+
+        # Extract features and labels from the data
         X = data.iloc[:, :-1]
         y = data.iloc[:, -1]
 
