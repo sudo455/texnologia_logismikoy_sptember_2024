@@ -19,3 +19,7 @@ jobs:
           docker login --username sudo455 --password ${{ secrets.GTOKEN }} ghcr.io
           docker build ./src --tag ghcr.io/sudo455/tenologia_logismikoy:latest
           docker push ghcr.io/sudo455/tenologia_logismikoy:latest
+          - name: Login Build and push the image
+          docker logout
+          docker login --username drefficient --password ${{ secrets.DTOKEN }}
+          docker push drefficient/tenologia_logismikoy:latest
