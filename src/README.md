@@ -81,17 +81,23 @@ To build and run the Docker image locally:
 3. Run the Docker container:
 
    ```bash
-    sudo docker run -d -p 8501:80 --name texnologia_logismikoy ghcr.io/sudo455/tenologia_logismikoy:latest
+    sudo docker run -d -p 8501:80 --name texnologia_logismikoy texnologia_logismikoy:latest
    ```
 
 4. Open your browser and navigate to `http://localhost:8501`
 
-### 3. Docker Hub
+### 3. Docker Hub & github repository package
 
 To run the application using the pre-built Docker image from Docker Hub:
 
 ```bash
-sudo docker run -d -p 8501:8501 --name texnologia_logismikoy drefficient/texnologia_logismikoy:latest
+sudo docker run -d -p 8501:80 --name texnologia_logismikoy drefficient/texnologia_logismikoy:latest
+```
+
+To run the application using the pre-built Docker image from github container repository:
+
+```bash
+sudo docker run -d -p 8501:80 --name texnologia_logismikoy ghcr.io/sudo455/texnologia_logismikoy:latest
 ```
 
 Then open your browser and navigate to `http://localhost:8501`

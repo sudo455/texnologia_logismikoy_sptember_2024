@@ -94,4 +94,9 @@ To run the application using the pre-built Docker image from Docker Hub:
 sudo docker run -d -p 8501:8501 --name texnologia_logismikoy drefficient/texnologia_logismikoy:latest
 ```
 
+To run the application using the pre-built github image from github:
+
+```bash
+sudo docker run -d -p 8501:80 --name texnologia_logismikoy ghcr.io/sudo455/texnologia_logismikoy:latest
+
 Then open your browser and navigate to `http://localhost:8501`
