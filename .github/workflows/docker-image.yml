@@ -20,7 +20,9 @@ jobs:
           docker build ./src --tag ghcr.io/sudo455/tenologia_logismikoy:latest
           docker push ghcr.io/sudo455/tenologia_logismikoy:latest
           - name: Login Build and push the image
-          docker logout
+          
+      - name: Login Build and push the image
+        run: |
           docker login --username drefficient --password ${{ secrets.DTOKEN }}
           docker build ./src --tag drefficient/tenologia_logismikoy:latest
           docker push drefficient/tenologia_logismikoy:latest
