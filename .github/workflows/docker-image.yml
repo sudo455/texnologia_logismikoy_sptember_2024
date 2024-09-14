@@ -14,14 +14,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       # build the image
-      - name: Login Build and push the image x2
+      - name: Login Build and push the image to ghcr.io
         run: |
           docker login --username sudo455 --password ${{ secrets.GTOKEN }} ghcr.io
           docker build ./src --tag ghcr.io/sudo455/tenologia_logismikoy:latest
           docker push ghcr.io/sudo455/tenologia_logismikoy:latest
-          - name: Login Build and push the image
-          
-      - name: Login Build and push the image
+      - name: Login Build and push the image to docker
         run: |
           docker login --username drefficient --password ${{ secrets.DTOKEN }}
           docker build ./src --tag drefficient/tenologia_logismikoy:latest
