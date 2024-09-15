@@ -37,19 +37,19 @@
 
 ### Documentation
 
-- [ ] Create detailed UML diagram of application architecture and user interface
+- [x] Create detailed UML diagram of application architecture and user interface
 - [ ] Write LaTeX report using Overleaf, including:
-  - [ ] Detailed design of the application
-  - [ ] Implementation details
+  - [x] Detailed design of the application
+  - [x] Implementation details
   - [ ] Analysis results and conclusions
-  - [ ] Description of each team member's contribution
-- [ ] Describe software release life cycle model (e.g., Agile)
+  - [x] Description of each team member's contribution
+- [x] Describe software release life cycle model (e.g., DevOps)
 
 ### Final Steps
 
 - [x] Conduct code review
 - [x] Refactor code based on review feedback
-- [ ] Update documentation with final changes
+- [x] Update documentation with final changes
 
 ## Notes
 

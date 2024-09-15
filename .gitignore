@@ -1,9 +1,5 @@
-*.pdf
 .vscode/
 venv/
-tabular_data_generator/
 /src/lib/__pycache__
 /src/lib/pages/__pycache__
 /src/lib/functions/__pycache__
-test.py
-LaTex/
