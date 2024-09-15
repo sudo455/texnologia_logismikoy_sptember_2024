@@ -165,3 +165,8 @@ sudo docker run -d -p 8501:80 --name texnologia_logismikoy ghcr.io/sudo455/texno
 ```
 
 Then open your browser and navigate to `http://localhost:8501`
+
+# AUTHORS
+
+Angelos Moraitis
+Theoxaris parisis
