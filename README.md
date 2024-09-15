@@ -169,4 +169,5 @@ Then open your browser and navigate to `http://localhost:8501`
 # AUTHORS
 
 Angelos Moraitis
+
 Theoxaris parisis
